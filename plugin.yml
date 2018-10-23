@@ -1,0 +1,20 @@
+name: CustomTag
+main: CustomTag\main
+version: 1.0.0
+api: [4.0.0]
+load: POSTWORLD
+author: PJZ9n
+desctiption: PMMP CustomTag Plugin
+website: http://asvd.net/
+permissions:
+  customtag:
+    default: op
+    description: "Allows using all the CustomTag things"
+    children:
+      customtag.command:
+        default: op
+        description: "Allows using all the CustomTag commands"
+        children:
+          customtag.command.tag:
+            default: true
+            description: "Allows all the tag command"
