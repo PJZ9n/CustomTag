@@ -1,6 +1,6 @@
 name: CustomTag
 main: CustomTag\main
-version: 1.0.0
+version: 1.1.1
 api: [4.0.0]
 load: POSTWORLD
 author: PJZ9n

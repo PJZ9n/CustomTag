@@ -31,6 +31,7 @@
                 $player = $sender->getPlayer();
                 $name = $player->getName();
             }
+            //print_r($this->main->tag_data->getAll());
             $form = new ModalFormRequestPacket();
             $form->formId = $this->main->formId[0];
             $form_data["type"] = "form";
@@ -56,6 +57,9 @@
                 );
                 $form_data["buttons"][] = array(
                     "text" => "§l§6[OP]§a称号を削除する",
+                );
+                $form_data["buttons"][] = array(
+                    "text" => "§l§6[OP]§a称号を§c強制的§aに設定する",
                 );
             }
             $form->formData = json_encode($form_data);

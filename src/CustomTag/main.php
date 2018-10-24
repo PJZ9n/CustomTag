@@ -21,11 +21,11 @@
             if (!file_exists($this->getDataFolder())) {
                 mkdir($this->getDataFolder(), 0777);
             }
-            $this->tag_data = new Config($this->getDataFolder() . "tag_data.json", Config::JSON, array(
+            $this->tag_data = new Config($this->getDataFolder() . "tag_data_v2.json", Config::JSON, array(
                 "player_tag" => array(),
                 "shop_tag" => array(),
             ));
-            for ($i = 0; $i < 5; $i++) {
+            for ($i = 0; $i < 6; $i++) {
                 $this->formId[$i] = mt_rand(450000, 500000);
             }
         }
